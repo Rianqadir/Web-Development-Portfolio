@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
+    <link rel="icon" href="../Images/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <video id="video-bg" autoplay loop muted>
+        <source src="../Images/background visual.mp4" type="video/mp4">  <!--This will contain video that will keep running in a loop in the background-->
+        Your browser does not support the video tag.
+    </video>
+    <nav class="navbar">
+                   
+        <ul>
+            <li><a href="Hangman Game.html">Home</a></li>                  <!--It includes the home,about, login/register, play game and rankings selection-->
+            <li><a href="about.html">About</a></li>
+            <li><a href="LogIn and Register.html">Login/Register</a></li>
+            <li><a href="Play game.html">Play</a></li>
+            <li><a href="Rankings page.html">Rankings</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container about-container">
+        <h1 class="title">About Hangman Game</h1>
+        <p class="description">
+            Welcome to the Hangman Game! Our goal is to provide a fun and challenging gaming experience for users of all ages. 
+            The game is designed to test your word-guessing skills while providing an enjoyable and interactive atmosphere.
+        </p>
+        <p class="description">
+            Hangman Game is built with passion and creativity. We aim to create not just a game but an immersive experience for our users. 
+            Explore the world of words, challenge yourself, and compete with friends to see who can achieve the highest score!
+        </p>
+        <button class="learn-more-button" onclick="animateDescription()">Learn More</button>
+    </div>
+
+    <footer class="footer">
+        &copy; 2023 Hangman Game. All rights reserved.
+    </footer>
+    <script src="../JS/game.js"></script>
+    
+</body>
+</html>

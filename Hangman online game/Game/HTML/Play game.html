@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Hangman</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/playgame.css">
+    <link rel="icon" href="../Images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <video id="video-bg" autoplay loop muted>
+        <source src="../Images/background visual.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <canvas id="canv" style="display: none;"></canvas>
+    <script src="../JS/game.js"></script>
+    
+    <nav class="navbar">               
+        <ul>
+            <li><a href="Play Game.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="LogIn and Register.html">Login/Register</a></li>
+            <li><a href="Play game.html">Play</a></li>
+            <li><a href="Rankings page.html">Rankings</a></li>
+        </ul>
+    </nav>
+
+   
+        <h1>Hangman Game!</h1>
+        <header id="just"></header>
+        <canvas id="canv" style="display: none;"></canvas>
+        <img src="../Images/logo.png" width="400" height="200">
+            <table border="4" width="700" class="table">
+                <tbody>
+                  <tr>
+                    <td class="text" style="text-align: right;" colspan="4">
+                        Score : <input type="text" id="score" readonly="true" size="3" value="0"><br><br> Fails (6) : <input type="text" id="fails" readonly="true" size="3" value="0"></td>
+                    <td colspan="7">
+                        <center>
+                            <input id="display1" readonly=true value="---Hangman---">
+                            </input>
+                            <br><br>
+                            <input id="display2" readonly=true value="Click START to get a word.">
+                            </input>
+                        </center>
+                    </td>
+                    <td colspan="2" id="justbutton">
+                        <center>
+                            <input type="button" value="Start" class="button" onclick="Start()">
+                        </center>
+                    </td>
+                  </tr>
+                  <tr>
+                        <td>
+                            <button disabled="true" id="A" onclick="handleGuess('A')">A</button>
+                        </td>
+                        <td>
+                            <button disabled="true" id="B" onclick="handleGuess('B')">B</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="C" onclick="handleGuess('C')">C</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="D" onclick="handleGuess('D')">D</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="E" onclick="handleGuess('E')">E</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="F" onclick="handleGuess('F')">F</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="G" onclick="handleGuess('G')">G</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="H" onclick="handleGuess('H')">H</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="I" onclick="handleGuess('I')">I</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="J" onclick="handleGuess('J')">J</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="K" onclick="handleGuess('K')">K</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="L" onclick="handleGuess('L')">L</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="M" onclick="handleGuess('M')">M</button>
+                            </td>
+                  </tr>
+                  <tr>
+                        <td>
+                            <button disabled="true" id="N" onclick="handleGuess('N')">N</button>
+                        </td>
+                        <td>
+                            <button disabled="true" id="O" onclick="handleGuess('O')">O</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="P" onclick="handleGuess('P')">P</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="Q" onclick="handleGuess('Q')">Q</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="R" onclick="handleGuess('R')">R</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="S" onclick="handleGuess('S')">S</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="T" onclick="handleGuess('T')">T</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="U" onclick="handleGuess('U')">U</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="V" onclick="handleGuess('V')">V</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="W" onclick="handleGuess('W')">W</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="X" onclick="handleGuess('X')">X</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="Y" onclick="handleGuess('Y')">Y</button>
+                            </td>
+                        <td>
+                            <button disabled="true" id="Z" onclick="handleGuess('Z')">Z</button>
+                            </td>
+                  </tr>
+                </tbody>
+              </table>
+              
+              <div id="username-display"></div>
+
+              <div class="user-info-box">
+                <!--<p id="username-display">Username: <span id="user-username"></span></p> -->
+                <p id="score-display">Score: <span id="user-score"></span></p>
+            </div>
+            </body>
+            
+           
+        <!-- Javascript  -->
+        <script src="../JS/game.js"></script>
+    
+
+    
+
+    <footer class="footer">
+        &copy; 2023 Hangman Game. All rights reserved.
+    </footer>
+
+</html>
+

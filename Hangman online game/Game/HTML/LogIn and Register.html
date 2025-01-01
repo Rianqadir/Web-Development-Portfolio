@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Login/Register - Hangman Game</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
+    <link rel="icon" href="../Images/logo.png" type="image/x-icon">
+</head>
+<body>
+    <video id="video-bg" autoplay loop muted>
+        <source src="../Images/background visual.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <nav class="navbar">
+        <ul>
+            <li><a href="Hangman Game.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="LogIn and Register.html">Login/Register</a></li>
+            <li><a href="Play game.html">Play</a></li>
+            <li><a href="Rankings page.html">Rankings</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container login-register-container">
+        <div class="form">
+            <h1 class="form-title">Login</h1>
+            <form id="loginForm" onsubmit="return validateLoginForm()">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+                
+                <button class="form-button" type="submit">Login</button>
+            </form>
+        </div>
+        <p id="loginfailure" style="color:red;"></p>
+
+        <div class="form">
+            <h1 class="form-title">Register</h1>
+            <form id="registerForm" onsubmit="return validateRegisterForm()">
+                <label for="new-username">Username</label>
+                <input type="text" id="new-username" name="new-username" placeholder="Create a username">
+
+                <label for="new-email">Email</label>
+                <input type="email" id="new-email" name="new-email" placeholder="Enter your email">
+                
+                <label for="new-dob">Date of Birth</label>
+                <input type="date" id="new-dob" name="new-dob" placeholder="Enter your date of birth">
+                
+                <label for="new-password">Password</label>
+                <input type="password" id="new-password" name="new-password" placeholder="Create a password">
+                
+                <button class="form-button" type="submit">Register</button>
+            </form>
+            <p id="registration-validation" style="color:red;"></p>
+        </div>
+    </div>
+    
+    <script src="../JS/login and register.js"></script>
+    
+    <footer class="footer">
+        &copy; 2023 Hangman Game. All rights reserved.
+    </footer>
+    
+    

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CONNECTED</title>
+  <link rel="stylesheet" href="code.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CONNECTED</h1>
+      <nav>
+        <ul>
+          <li><a href="#login">Login</a></li>
+          <li class="search">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchBtn">Search</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div id="login" class="hidden">
+        <h2>Login</h2>
+        <form action="/login" method="post" id="loginForm">
+          <input type="email" id="loginEmail" name="email" placeholder="Email" required>
+          <input type="password" id="loginPassword" name="password" placeholder="Password" required pattern=".{6,}">
+          <button type="submit">Login</button>
+          <p id="createAccountLink">Don't have an account? <a href="#" id="registerLink">Create New Account</a></p>
+        </form>
+      </div>
+      <div id="register" class="hidden">
+        <h2>Register</h2>
+        <form action="/register" method="post" id="registerForm">
+          <input type="email" id="registerEmail" name="email" placeholder="Email" required>
+          <input type="password" id="registerPassword" name="password" placeholder="Password" required pattern=".{6,}">
+          <button type="submit">Register</button>
+        </form>
+      </div>      
+      
+      <div id="feeds">
+        <h2>Feed</h2>
+        <div class="feed">
+          <div class="feed-header">
+            <h3>rianqadir2011@gmail.com</h3>
+            <img src="pictures/360_F_244436923_vkMe10KKKiw5bjhZeRDT05moxWcPpdmb.jpg" alt="User 1 Profile Picture">
+          </div>
+          <div class="feed-content">
+            <h4>My Pet</h4>
+            <p>I named him Oreo</p>
+            <img src="pictures/dog.jpeg" alt="Post 1 Picture">
+          </div>
+        </div>
+
+        <div class="feed">
+          <div class="feed-header">
+            <h3>Maria</h3>
+            <img src="pictures/download.png" alt="User 2 Profile Picture">
+          </div>
+          <div class="feed-content">
+            <h4>I made Pizza for the first time</h4>
+            <p>I will share the recipe later.</p>
+            <img src="pictures/pizza.jpeg" alt="Post 2 Picture">
+          </div>
+        </div>
+      </div>
+    </main>
+    <button id="uploadPostBtn">Upload Post</button>
+    <div id="upload" class="hidden">
+      <h2>Upload Post</h2>
+      <form id="uploadForm">
+        <input type="text" id="postTitle" name="title" placeholder="Title" required>
+        <textarea id="postContent" name="content" placeholder="Content" required></textarea>
+        <input type="file" id="postImage" name="image" accept="image/*">
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+  </div>
+  <footer><p>Connected</p></footer>
+  <script src="JS/code.js"></script>
+</body>
+</html>
+
+
